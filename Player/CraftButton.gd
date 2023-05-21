@@ -1,4 +1,4 @@
 extends Button
 
-export var craftItem = ""
-export var craftMaterials = {}
+@export var craftItem = ""
+@export var craftMaterials = {}

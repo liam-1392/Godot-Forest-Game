@@ -28,5 +28,5 @@ func CheckCollision():
 		#get_tree().call_group("GameState", "IsRayCastEntered")
 
 func SetHeldItem(item):
-	$RayCast2D/AnimatedSprite.animation = item
+	$RayCast2D/AnimatedSprite2D.animation = item
 	itemHeld = item

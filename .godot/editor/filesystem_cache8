@@ -1,0 +1,38 @@
+2a60927148abd1d33b818b535e306557
+::res://::1684696885
+DeathScreen.tscn::PackedScene::-1::1684696855::0::1::::<><>::
+default_env.tres::Environment::-1::1684696855::0::1::::<><>::
+icon.png::CompressedTexture2D::6882825680278435025::1684696731::1684696887::1::::<><>::
+Stage.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Player/Player.tscn<>res://Landscape Objects/GrasTiles.tres<>res://Landscape Objects/Tree.tscn<>res://Landscape Objects/Mine.tscn<>res://Landscape Objects/Berry Bush.tscn
+::res://Landscape Objects/::1684696729
+Berry Bush.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
+Berry Bush.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Placeholder Textures/Placeholder Berry Bush.png<>res://Landscape Objects/Berry Bush.gd
+GrasTiles.tres::TileSet::-1::1684696855::0::1::::<><>::res://Placeholder Textures/Placeholder Gras.png
+GrasTiles.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Placeholder Textures/Placeholder Gras.png
+Mine.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
+Mine.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Landscape Objects/Mine.gd<>res://Placeholder Textures/Placeholder Mine.png
+Stone Wall.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
+StoneWall.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Landscape Objects/Stone Wall.gd<>res://Placeholder Textures/Placeholder Rock.png
+Tree.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
+Tree.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Placeholder Textures/Placeholder Tree.png<>res://Landscape Objects/Tree.gd
+::res://Placeholder Textures/::1684696730
+InventorySlot.png::CompressedTexture2D::4086307580909975097::1684696729::1684696887::1::::<><>::
+Placeholder axe.png::CompressedTexture2D::4663553693035810282::1684696729::1684696887::1::::<><>::
+Placeholder Berry Bush.png::CompressedTexture2D::7615987389509832428::1684696730::1684696887::1::::<><>::
+Placeholder Berry.png::CompressedTexture2D::6821535636813142040::1684696730::1684696887::1::::<><>::
+Placeholder Caveman.png::CompressedTexture2D::3672725530303813714::1684696730::1684696887::1::::<><>::
+Placeholder Gras.png::CompressedTexture2D::9024527326071843618::1684696730::1684696887::1::::<><>::
+Placeholder Health.png::CompressedTexture2D::8463393837986960875::1684696730::1684696887::1::::<><>::
+Placeholder Mine.png::CompressedTexture2D::6859984349944361407::1684696730::1684696887::1::::<><>::
+Placeholder Pickaxe.png::CompressedTexture2D::2117130345071362909::1684696730::1684696887::1::::<><>::
+Placeholder Rock.png::CompressedTexture2D::5180246524732523421::1684696730::1684696887::1::::<><>::
+Placeholder textures.png::CompressedTexture2D::8507871030412050063::1684696730::1684696887::1::::<><>::
+Placeholder Tree.png::CompressedTexture2D::115308828759429910::1684696730::1684696887::1::::<><>::
+::res://Player/::1684696730
+CraftButton.gd::GDScript::-1::1684696855::0::1::::<>Button<>::
+CraftManager.gd::GDScript::-1::1684696855::0::1::::<>Node2D<>::
+Player.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Placeholder Textures/Placeholder Caveman.png<>res://Player/PlayerMovement.gd<>res://Player/PlayerAttack.gd<>res://Placeholder Textures/Placeholder axe.png<>res://Placeholder Textures/InventorySlot.png<>res://Placeholder Textures/Placeholder Rock.png<>res://Placeholder Textures/Placeholder Log.png<>res://Player/PlayerInventory.gd<>res://Placeholder Textures/Placeholder Pickaxe.png<>res://Placeholder Textures/Placeholder Berry.png<>res://Placeholder Textures/Placeholder Health.png<>res://Player/PlayerStats.gd<>res://Player/CraftButton.gd<>res://Player/CraftManager.gd
+PlayerAttack.gd::GDScript::-1::1684696855::0::1::::<>Node2D<>::
+PlayerInventory.gd::GDScript::-1::1684696855::0::1::::<>Node2D<>::
+PlayerMovement.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
+PlayerStats.gd::GDScript::-1::1684696855::0::1::::<>VBoxContainer<>::

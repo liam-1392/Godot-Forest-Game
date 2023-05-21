@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 var motion = Vector2(0,0)
 
@@ -25,4 +25,5 @@ func ProcessMovement():
 	else:
 		motion.x = 0
 		
-	move_and_slide(motion)
+	set_velocity(motion)
+	move_and_slide()

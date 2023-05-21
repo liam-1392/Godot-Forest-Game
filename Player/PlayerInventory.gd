@@ -1,6 +1,6 @@
 extends Node2D
 
-export var playerResources = {
+@export var playerResources = {
 	"Wood": 1,
 	"Stone": 0, 
 	"Berry": 0,
@@ -40,7 +40,7 @@ func CheckItemSwitch():
 
 func SwitchItem():
 	var chosenResource = resourceOrder[selectedResource]
-	$AnimatedSprite.animation = chosenResource
+	$AnimatedSprite2D.animation = chosenResource
 	get_tree().call_group("GameState", "SetHeldItem", chosenResource)
 
 func SetItemValue():

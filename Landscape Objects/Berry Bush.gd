@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 var playerEntered = false
 
@@ -14,13 +14,13 @@ func CheckDestroy(item):
 		Destroy()
 
 func Destroy():
-	if $Sprite.frame == 0:
+	if $Sprite2D.frame == 0:
 		get_tree().call_group("GameState", "AddResource", "Berry", 1)
-		$Sprite.frame = 1
+		$Sprite2D.frame = 1
 		$RegrowTimer.start()
 	
 func _on_Timer_timeout():
 	playerEntered = false
 
 func _on_RegrowTimer_timeout():
-	$Sprite.frame = 0
+	$Sprite2D.frame = 0

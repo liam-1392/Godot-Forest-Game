@@ -34,7 +34,7 @@ func _on_HungerTimer_timeout():
 	else:
 		playerHealth -= 1
 		if playerHealth <= 0:
-			get_tree().change_scene("res://DeathScreen.tscn")
+			get_tree().change_scene_to_file("res://DeathScreen.tscn")
 		UpdateHealthBar()
 	
 	$HungerBar/HungerTimer.start()
