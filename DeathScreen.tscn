@@ -1,0 +1,20 @@
+[gd_scene format=2]
+
+[node name="Death" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1030.0
+margin_bottom = 600.0
+color = Color( 0.682353, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_scale = Vector2( 8, 8 )
+text = "You Have Died haha"
+__meta__ = {
+"_edit_use_anchors_": false
+}
