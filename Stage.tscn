@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d05c8n12v6wd"]
+[gd_scene load_steps=6 format=3 uid="uid://d05c8n12v6wd"]
 
 [ext_resource type="TileSet" path="res://Landscape Objects/GrasTiles.tres" id="2"]
-[ext_resource type="PackedScene" path="res://Landscape Objects/Tree.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://bu3gextl511lc" path="res://Landscape Objects/Tree.tscn" id="3"]
 [ext_resource type="PackedScene" path="res://Landscape Objects/Mine.tscn" id="4"]
-[ext_resource type="PackedScene" path="res://Landscape Objects/Berry Bush.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://cn6et1rys2ngy" path="res://Landscape Objects/Berry Bush.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://cpffj62nxdosm" path="res://Player/Player.tscn" id="5_ku7jp"]
 
 [node name="Stage" type="Node2D"]
 
@@ -58,3 +59,5 @@ position = Vector2(200, 60)
 [node name="TileMap2" type="TileMap" parent="."]
 format = 2
 layer_0/tile_data = PackedInt32Array(65541, 0, 0, 65542, 0, 0, 65543, 0, 0)
+
+[node name="Caveman" parent="." instance=ExtResource("5_ku7jp")]

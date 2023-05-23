@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cudkl47rp4ala"
-path="res://.godot/imported/Placeholder Log.png-a6c01339f4ffaace9a15d664391fdd43.ctex"
+uid="uid://d4b10cbxv1t5j"
+path="res://.godot/imported/Placeholder Floor.png-d1d255238b4237a91d4181fd7de96c70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Placeholder Textures/Placeholder Log.png"
-dest_files=["res://.godot/imported/Placeholder Log.png-a6c01339f4ffaace9a15d664391fdd43.ctex"]
+source_file="res://Placeholder Textures/Placeholder Floor.png"
+dest_files=["res://.godot/imported/Placeholder Floor.png-d1d255238b4237a91d4181fd7de96c70.ctex"]
 
 [params]
 

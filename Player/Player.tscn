@@ -1,99 +1,138 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=21 format=3 uid="uid://cpffj62nxdosm"]
 
-[ext_resource path="res://Placeholder Textures/Placeholder Caveman.png" type="Texture2D" id=1]
-[ext_resource path="res://Player/PlayerMovement.gd" type="Script" id=2]
-[ext_resource path="res://Player/PlayerAttack.gd" type="Script" id=3]
-[ext_resource path="res://Placeholder Textures/Placeholder axe.png" type="Texture2D" id=4]
-[ext_resource path="res://Placeholder Textures/InventorySlot.png" type="Texture2D" id=5]
-[ext_resource path="res://Placeholder Textures/Placeholder Rock.png" type="Texture2D" id=6]
-[ext_resource path="res://Placeholder Textures/Placeholder Log.png" type="Texture2D" id=7]
-[ext_resource path="res://Player/PlayerInventory.gd" type="Script" id=8]
-[ext_resource path="res://Placeholder Textures/Placeholder Pickaxe.png" type="Texture2D" id=9]
-[ext_resource path="res://Placeholder Textures/Placeholder Berry.png" type="Texture2D" id=10]
-[ext_resource path="res://Placeholder Textures/Placeholder Health.png" type="Texture2D" id=11]
-[ext_resource path="res://Player/PlayerStats.gd" type="Script" id=12]
-[ext_resource path="res://Player/CraftButton.gd" type="Script" id=13]
-[ext_resource path="res://Player/CraftManager.gd" type="Script" id=14]
+[ext_resource type="Texture2D" uid="uid://bsldiulw62ngk" path="res://Placeholder Textures/Placeholder Caveman.png" id="1"]
+[ext_resource type="Script" path="res://Player/PlayerMovement.gd" id="2"]
+[ext_resource type="Script" path="res://Player/PlayerAttack.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://b7pcbvpo2s5bq" path="res://Placeholder Textures/Placeholder axe.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cy3c7eevi03ig" path="res://Placeholder Textures/Placeholder Cursor.png" id="4_qkhbb"]
+[ext_resource type="Texture2D" uid="uid://byho5hq8wsda4" path="res://Placeholder Textures/InventorySlot.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bc23e5s5lwnx0" path="res://Placeholder Textures/Placeholder Gun.png" id="5_1y1f8"]
+[ext_resource type="Texture2D" uid="uid://cf2l5yl8e0p8x" path="res://Placeholder Textures/Placeholder Rock.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cudkl47rp4ala" path="res://Placeholder Textures/Placeholder Log.png" id="7"]
+[ext_resource type="Script" path="res://Player/PlayerInventory.gd" id="8"]
+[ext_resource type="Texture2D" uid="uid://5fs3es0s38ur" path="res://Placeholder Textures/Placeholder Pickaxe.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c4gnxv1by20b1" path="res://Placeholder Textures/Placeholder Berry.png" id="10"]
+[ext_resource type="Script" path="res://Player/PlayerTool.gd" id="10_3xkn2"]
+[ext_resource type="Texture2D" uid="uid://dsty4ifhnbqqt" path="res://Placeholder Textures/Placeholder Health.png" id="11"]
+[ext_resource type="Script" path="res://Player/PlayerStats.gd" id="12"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 4.15973, 8.99355 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(4.15973, 8.99355)
 
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ ExtResource( 10 ) ],
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bwnn"]
+size = Vector2(2.9103, 2.11058)
+
+[sub_resource type="SpriteFrames" id="2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10")
+}],
 "loop": true,
-"name": "Berry",
+"name": &"Berry",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
 "loop": true,
-"name": "Pickaxe",
+"name": &"Stone",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7")
+}],
 "loop": true,
-"name": "Axe",
+"name": &"Wood",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pnoas"]
+atlas = ExtResource("5_1y1f8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wyh1m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4")
+}],
+"loop": true,
+"name": &"Axe",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pnoas")
+}],
 "loop": true,
-"name": "Stone",
+"name": &"Gun",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9")
+}],
 "loop": true,
-"name": "Wood",
+"name": &"Pickaxe",
 "speed": 5.0
-} ]
+}]
 
 [node name="Caveman" type="CharacterBody2D"]
 z_index = 100
-script = ExtResource( 2 )
+script = ExtResource("2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource( 1 )
+texture = ExtResource("1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource("1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-scale = Vector2( 2, 1 )
-current = true
-zoom = Vector2( 0.2, 0.2 )
+scale = Vector2(2, 1)
+zoom = Vector2(0.2, 0.2)
 
 [node name="Attacking" type="Node2D" parent="."]
 rotation = 2.03156
-script = ExtResource( 3 )
+script = ExtResource("3")
 
 [node name="RayCast2D" type="RayCast2D" parent="Attacking"]
-position = Vector2( 11, 0 )
 rotation = -1.5708
-enabled = true
-target_position = Vector2( 0, 1 )
+target_position = Vector2(-1.44361, 24.3259)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Attacking/RayCast2D"]
-position = Vector2( 0, 1 )
-rotation = -1.5708
-frames = SubResource( 2 )
-animation = "Berry"
-flip_h = true
+[node name="Sprite2D" type="Sprite2D" parent="Attacking"]
+position = Vector2(17, 10)
+texture = ExtResource("4_qkhbb")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="Gun" type="Sprite2D" parent="Attacking"]
+position = Vector2(12, 2)
+rotation = 0.127409
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("5_1y1f8")
+vframes = 2
+
+[node name="BulletPoint" type="CollisionShape2D" parent="Attacking/Gun"]
+position = Vector2(11.1557, -2.83547)
+shape = SubResource("RectangleShape2D_3bwnn")
 
 [node name="Inventory" type="Node2D" parent="."]
-position = Vector2( -100, 25 )
-script = ExtResource( 8 )
+position = Vector2(-100, 25)
+script = ExtResource("8")
 
 [node name="TextureRect" type="TextureRect" parent="Inventory"]
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+texture = ExtResource("5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Inventory"]
-position = Vector2( 17, 20 )
-frames = SubResource( 2 )
-animation = "Berry"
+position = Vector2(17, 20)
+sprite_frames = SubResource("2")
+animation = &"Berry"
 
 [node name="Label" type="Label" parent="Inventory"]
 offset_left = 20.0
@@ -101,103 +140,51 @@ offset_top = 20.0
 offset_right = 60.0
 offset_bottom = 34.0
 text = "1"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Tool" type="Node2D" parent="."]
+position = Vector2(-70, 25)
+script = ExtResource("10_3xkn2")
+
+[node name="TextureRect" type="TextureRect" parent="Tool"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tool"]
+position = Vector2(17, 20)
+sprite_frames = SubResource("SpriteFrames_wyh1m")
+animation = &"Gun"
 
 [node name="HUD" type="VBoxContainer" parent="."]
 offset_left = -100.0
 offset_top = -60.0
 offset_right = -60.0
 offset_bottom = -20.0
-script = ExtResource( 12 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("12")
 
 [node name="HealthBar" type="HBoxContainer" parent="HUD"]
-offset_right = 40.0
-offset_bottom = 14.0
+layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="HUD/HealthBar"]
-offset_right = 10.0
-offset_bottom = 14.0
-texture = ExtResource( 11 )
+layout_mode = 2
+texture = ExtResource("11")
 
 [node name="Label" type="Label" parent="HUD/HealthBar"]
-offset_left = 14.0
-offset_right = 38.0
-offset_bottom = 14.0
+layout_mode = 2
 text = "100"
 
 [node name="HungerBar" type="HBoxContainer" parent="HUD"]
-offset_top = 18.0
-offset_right = 40.0
-offset_bottom = 32.0
+layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="HUD/HungerBar"]
-offset_right = 10.0
-offset_bottom = 14.0
-texture = ExtResource( 10 )
+layout_mode = 2
+texture = ExtResource("10")
 
 [node name="Label" type="Label" parent="HUD/HungerBar"]
-offset_left = 14.0
-offset_right = 38.0
-offset_bottom = 14.0
+layout_mode = 2
 text = "100"
 
 [node name="HungerTimer" type="Timer" parent="HUD/HungerBar"]
 wait_time = 5.0
 
-[node name="CraftMenu" type="Node2D" parent="."]
-position = Vector2( 50, 0 )
-script = ExtResource( 14 )
-
-[node name="ColorRect" type="ColorRect" parent="CraftMenu"]
-offset_right = 85.0
-offset_bottom = 100.0
-color = Color( 0.152941, 0.678431, 0.0235294, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="CraftMenu"]
-offset_right = 40.0
-offset_bottom = 14.0
-text = "Crafting"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CraftMenu"]
-offset_top = 15.0
-offset_right = 75.0
-offset_bottom = 55.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Pickaxe" type="Button" parent="CraftMenu/HBoxContainer"]
-offset_right = 22.0
-offset_bottom = 40.0
-icon = ExtResource( 9 )
-script = ExtResource( 13 )
-craftItem = "Pickaxe"
-craftMaterials = {
-"Wood": 5
-}
-
-[node name="Axe" type="Button" parent="CraftMenu/HBoxContainer"]
-offset_left = 26.0
-offset_right = 43.0
-offset_bottom = 40.0
-icon = ExtResource( 4 )
-script = ExtResource( 13 )
-craftItem = "Axe"
-craftMaterials = {
-"Berry": 5
-}
-
 [connection signal="timeout" from="HUD/HungerBar/HungerTimer" to="HUD" method="_on_HungerTimer_timeout"]
-[connection signal="pressed" from="CraftMenu/HBoxContainer/Pickaxe" to="CraftMenu" method="_on_Pickaxe_pressed"]
-[connection signal="pressed" from="CraftMenu/HBoxContainer/Axe" to="CraftMenu" method="_on_Axe_pressed"]

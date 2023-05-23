@@ -1,5 +1,7 @@
 extends VBoxContainer
 
+var itemHeld = ""
+
 var playerHealth = 100
 var playerHunger = 100
 
@@ -8,11 +10,15 @@ func _ready():
 	$HungerBar/HungerTimer.start()
 
 func _process(delta):
-	pass
+	CheckItemUse()
+	SetItemHeld()
 
-func CheckDestroy(item):
-	if get_parent().get_node("Inventory").playerResources["Berry"] > 0:
-		if item == "Berry":
+func SetItemHeld():
+	itemHeld = $"../Inventory".resourceOrder[$"../Inventory".selectedResource]
+
+func CheckItemUse():
+	if Input.is_action_just_pressed("Click"):
+		if itemHeld == "Berry":
 			playerHunger += 10
 		
 			if playerHunger > 100:

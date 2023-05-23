@@ -3,9 +3,7 @@ extends Node2D
 @export var playerResources = {
 	"Wood": 1,
 	"Stone": 0, 
-	"Berry": 0,
-	"Axe": 0,
-	"Pickaxe": 0
+	"Berry": 0
 }
 
 var resourceOrder = ["Wood"]
@@ -15,28 +13,31 @@ var selectedResource = 0
 
 
 func _ready():
+	$AnimatedSprite2D.animation = "Wood"
 	add_to_group("GameState")
 
 # warning-ignore:unused_argument
 func _process(delta):
-	CheckItemSwitch()
-	SwitchItem()
+	CheckItemSwitch(false)
 	SetItemValue()
 	CheckIfItemExists()
-	#print(resourceOrder)
-	#if Input.is_action_just_pressed("place"):
-	#	Place()
 	
 
-func CheckItemSwitch():
-	if Input.is_action_just_pressed("inv up"):
+func CheckItemSwitch(switch):
+	if Input.is_action_just_pressed("inv up") or switch:
 		selectedResource += 1
+		
 		if selectedResource > (len(resourceOrder) -1):
 			selectedResource = 0
+			
+		SwitchItem()
 	if Input.is_action_just_pressed("inv down"):
 		selectedResource -= 1
+
 		if selectedResource < 0:
 			selectedResource = len(resourceOrder) - 1
+			
+		SwitchItem()
 
 func SwitchItem():
 	var chosenResource = resourceOrder[selectedResource]
@@ -49,13 +50,14 @@ func SetItemValue():
 
 func CheckIfItemExists():
 	for item in playerResources.keys():
-		if typeof(playerResources[item]) != 4:
-			if playerResources[item]:
-				if !resourceOrder.has(item):
-					resourceOrder.append(item)
-			elif resourceOrder.has(item):
-				selectedResource -= 1
-				resourceOrder.remove(item)
+		if playerResources[item] > 0:
+			if not(resourceOrder.has(item)):
+				resourceOrder.append(item)
+		elif resourceOrder.has(item):
+			selectedResource -= 1
+			resourceOrder.erase(item)
+			if $AnimatedSprite2D.animation == item:
+				CheckItemSwitch(true)
 
 func AddResource(item, quantity):
 	playerResources[item] += quantity

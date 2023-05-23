@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cudkl47rp4ala"
-path="res://.godot/imported/Placeholder Log.png-a6c01339f4ffaace9a15d664391fdd43.ctex"
+uid="uid://b72vjshhn24fd"
+path="res://.godot/imported/Placeholder Cursor and gun.png-d178f14abb2771310a8d8703cb413429.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Placeholder Textures/Placeholder Log.png"
-dest_files=["res://.godot/imported/Placeholder Log.png-a6c01339f4ffaace9a15d664391fdd43.ctex"]
+source_file="res://Placeholder Textures/Placeholder Cursor and gun.png"
+dest_files=["res://.godot/imported/Placeholder Cursor and gun.png-d178f14abb2771310a8d8703cb413429.ctex"]
 
 [params]
 
