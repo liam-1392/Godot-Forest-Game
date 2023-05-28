@@ -1,0 +1,12 @@
+res://default_env.tres
+res://Stage.tscn
+res://Landscape Objects/Tree.tscn
+res://Player/Player.tscn
+res://Player/PlayerInventory.gd
+res://Landscape Objects/Berry Bush.tscn
+res://Player/PlayerTool.gd
+res://Player/PlayerAttack.gd
+res://Landscape Objects/Tree.gd
+res://Player/PlayerStats.gd
+res://Player/bullet.tscn
+res://Player/bullet.gd

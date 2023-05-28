@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Placeholder Textures/Placeholder Gras.png" type="Texture2D" id=1]
+
+[node name="GrasTiles" type="Node2D"]
+
+[node name="Placeholder Gras" type="Sprite2D" parent="."]
+position = Vector2( 10.3881, 10.4374 )
+texture = ExtResource( 1 )

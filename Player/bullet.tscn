@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://d25pxm8smlh1u"]
+
+[ext_resource type="Script" path="res://Player/bullet.gd" id="1_kv6la"]
+[ext_resource type="Texture2D" uid="uid://d0xxgjw8ogif2" path="res://Placeholder Textures/Placeholder Bullet.png" id="1_soxb3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_idkqo"]
+size = Vector2(3, 1)
+
+[node name="Bullet" type="RigidBody2D"]
+mass = 0.01
+gravity_scale = 0.0
+can_sleep = false
+lock_rotation = true
+script = ExtResource("1_kv6la")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_idkqo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5, 5)
+texture = ExtResource("1_soxb3")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn6et1rys2ngy"]
+
+[ext_resource type="Texture2D" uid="uid://dgrig1y5yfons" path="res://Placeholder Textures/Placeholder Berry Bush.png" id="1"]
+[ext_resource type="Script" path="res://Landscape Objects/Berry Bush.gd" id="2"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(4.90848, 5.94028)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1")
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.44545, 0.111362)
+shape = SubResource("1")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="RegrowTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="RegrowTimer" to="." method="_on_RegrowTimer_timeout"]
