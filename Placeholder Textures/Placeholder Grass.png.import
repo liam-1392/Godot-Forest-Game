@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1tsv8ooavwgw"
-path="res://.godot/imported/Placeholder Gras.png-ed67fca4a6e101db00efc257d3d37898.ctex"
+path="res://.godot/imported/Placeholder Grass.png-df6e02afcc388b57e6ae0562fa0e9deb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Placeholder Textures/Placeholder Gras.png"
-dest_files=["res://.godot/imported/Placeholder Gras.png-ed67fca4a6e101db00efc257d3d37898.ctex"]
+source_file="res://Placeholder Textures/Placeholder Grass.png"
+dest_files=["res://.godot/imported/Placeholder Grass.png-df6e02afcc388b57e6ae0562fa0e9deb.ctex"]
 
 [params]
 

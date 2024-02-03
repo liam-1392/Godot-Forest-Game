@@ -1,44 +1,53 @@
 2a60927148abd1d33b818b535e306557
-::res://::1684815122
-DeathScreen.tscn::PackedScene::-1::1684696855::0::1::::<><>::
-default_env.tres::Environment::6437092590782540194::1684815122::0::1::::<><>::
-icon.png::CompressedTexture2D::6882825680278435025::1684696731::1684696887::1::::<><>::
-Stage.tscn::PackedScene::264002810707671491::1684815122::0::1::::<><>::res://Landscape Objects/GrasTiles.tres<>uid://bu3gextl511lc<>res://Landscape Objects/Mine.tscn<>uid://cn6et1rys2ngy<>uid://cpffj62nxdosm
-::res://Landscape Objects/::1684815122
-Berry Bush.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
-Berry Bush.tscn::PackedScene::5749570236096094544::1684815122::0::1::::<><>::uid://dgrig1y5yfons<>res://Landscape Objects/Berry Bush.gd
-GrasTiles.tres::TileSet::-1::1684696855::0::1::::<><>::res://Placeholder Textures/Placeholder Gras.png
-GrasTiles.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Placeholder Textures/Placeholder Gras.png
-Mine.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
-Mine.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Landscape Objects/Mine.gd<>res://Placeholder Textures/Placeholder Mine.png
-Stone Wall.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
-StoneWall.tscn::PackedScene::-1::1684696855::0::1::::<><>::res://Landscape Objects/Stone Wall.gd<>res://Placeholder Textures/Placeholder Rock.png
-Tree.gd::GDScript::-1::1684731559::0::1::::<>CharacterBody2D<>::
-Tree.tscn::PackedScene::3848372816628910128::1684815122::0::1::::<><>::uid://bv4echkegyyw<>res://Landscape Objects/Tree.gd
-::res://Placeholder Textures/::1684815377
-InventorySlot.png::CompressedTexture2D::4086307580909975097::1684696729::1684696887::1::::<><>::
-Item.png::CompressedTexture2D::3318172767405048653::1684781552::1684781559::1::::<><>::
-Placeholder axe.png::CompressedTexture2D::4663553693035810282::1684696729::1684696887::1::::<><>::
-Placeholder Berry Bush.png::CompressedTexture2D::7615987389509832428::1684696730::1684696887::1::::<><>::
-Placeholder Berry.png::CompressedTexture2D::6821535636813142040::1684696730::1684696887::1::::<><>::
-Placeholder Bullet.png::CompressedTexture2D::8962871544184717077::1684815377::1684815381::1::::<><>::
-Placeholder Caveman.png::CompressedTexture2D::3672725530303813714::1684696730::1684696887::1::::<><>::
-Placeholder Cursor and gun.png::CompressedTexture2D::4689493965033439849::1684783404::1684783406::1::::<><>::
-Placeholder Cursor.png::CompressedTexture2D::6515354988441610734::1684814834::1684814835::1::::<><>::
-Placeholder Floor.png::CompressedTexture2D::9198426288661479953::1684780767::1684780768::1::::<><>::
-Placeholder Gras.png::CompressedTexture2D::9024527326071843618::1684696730::1684696887::1::::<><>::
-Placeholder Gun.png::CompressedTexture2D::2584245394187487099::1684814892::1684814894::1::::<><>::
-Placeholder Health.png::CompressedTexture2D::8463393837986960875::1684696730::1684696887::1::::<><>::
-Placeholder Log.png::CompressedTexture2D::6183439760474130542::1684699873::1684699879::1::::<><>::
-Placeholder Mine.png::CompressedTexture2D::6859984349944361407::1684696730::1684696887::1::::<><>::
-Placeholder Pickaxe.png::CompressedTexture2D::2117130345071362909::1684696730::1684696887::1::::<><>::
-Placeholder Rock.png::CompressedTexture2D::5180246524732523421::1684696730::1684696887::1::::<><>::
-Placeholder textures.png::CompressedTexture2D::8507871030412050063::1684696730::1684696887::1::::<><>::
-Placeholder Tree.png::CompressedTexture2D::115308828759429910::1684696730::1684696887::1::::<><>::
-::res://Player/::1684815122
-Player.tscn::PackedScene::5836317238391067792::1684815122::0::1::::<><>::uid://bsldiulw62ngk<>res://Player/PlayerMovement.gd<>res://Player/PlayerAttack.gd<>uid://b7pcbvpo2s5bq<>uid://cy3c7eevi03ig<>uid://byho5hq8wsda4<>uid://bc23e5s5lwnx0<>uid://cf2l5yl8e0p8x<>uid://cudkl47rp4ala<>res://Player/PlayerInventory.gd<>uid://5fs3es0s38ur<>uid://c4gnxv1by20b1<>res://Player/PlayerTool.gd<>uid://dsty4ifhnbqqt<>res://Player/PlayerStats.gd
-PlayerAttack.gd::GDScript::-1::1684732833::0::1::::<>Node2D<>::
-PlayerInventory.gd::GDScript::-1::1684780425::0::1::::<>Node2D<>::
-PlayerMovement.gd::GDScript::-1::1684696855::0::1::::<>CharacterBody2D<>::
-PlayerStats.gd::GDScript::-1::1684732843::0::1::::<>VBoxContainer<>::
-PlayerTool.gd::GDScript::-1::1684815122::0::1::::<>Node2D<>::
+::res://::1706819577
+DeathScreen.tscn::PackedScene::-1::1684693255::0::1::::<><>::
+default_env.tres::Environment::6437092590782540194::1706819365::0::1::::<><>::
+icon.png::CompressedTexture2D::6882825680278435025::1684693131::1684693287::1::::<><>::
+Stage.tscn::PackedScene::264002810707671491::1706819365::0::1::::<><>::res://Landscape Objects/LevelBuilder.gd<>uid://bu3gextl511lc<>uid://cvkxwhu5fpbpo<>uid://cn6et1rys2ngy<>uid://cpffj62nxdosm<>uid://ydqtl5xu2757
+::res://Landscape Objects/::1706819365
+bear.gd::GDScript::-1::1685123754::0::1::::<>CharacterBody2D<>::
+bear.tscn::PackedScene::1691731407717237780::1700856427::0::1::::<><>::res://Landscape Objects/bear.gd<>uid://coftfbtrkoxra
+Berry Bush.gd::GDScript::-1::1684693255::0::1::::<>CharacterBody2D<>::
+Berry Bush.tscn::PackedScene::5749570236096094544::1700856426::0::1::::<><>::uid://dgrig1y5yfons<>res://Landscape Objects/Berry Bush.gd
+GrasTiles.tres::TileSet::-1::1706817251::0::1::::<><>::uid://d1tsv8ooavwgw
+GrasTiles.tscn::PackedScene::-1::1706817251::0::1::::<><>::uid://d1tsv8ooavwgw
+LevelBuilder.gd::GDScript::-1::1706819365::0::1::::<>TileMap<>::
+Mine.gd::GDScript::-1::1684693255::0::1::::<>CharacterBody2D<>::
+Mine.tscn::PackedScene::6268887039554891288::1700856427::0::1::::<><>::res://Landscape Objects/Mine.gd<>uid://c40a67vi50r16
+Stone Wall.gd::GDScript::-1::1684693255::0::1::::<>CharacterBody2D<>::
+StoneWall.tscn::PackedScene::-1::1684693255::0::1::::<><>::res://Landscape Objects/Stone Wall.gd<>res://Placeholder Textures/Placeholder Rock.png
+Tree.gd::GDScript::-1::1684872912::0::1::::<>CharacterBody2D<>::
+Tree.tscn::PackedScene::3848372816628910128::1700856426::0::1::::<><>::uid://bv4echkegyyw<>res://Landscape Objects/Tree.gd
+::res://Placeholder Textures/::1706817446
+InventorySlot.png::CompressedTexture2D::4086307580909975097::1684693129::1684693287::1::::<><>::
+Item.png::CompressedTexture2D::3318172767405048653::1684777952::1684777959::1::::<><>::
+Placeholder axe.png::CompressedTexture2D::4663553693035810282::1684693129::1684693287::1::::<><>::
+Placeholder bear.png::CompressedTexture2D::5766969701582018702::1684853294::1684853363::1::::<><>::
+Placeholder Berry Bush.png::CompressedTexture2D::7615987389509832428::1684693130::1684693287::1::::<><>::
+Placeholder Berry.png::CompressedTexture2D::6821535636813142040::1684693130::1684693287::1::::<><>::
+Placeholder Bullet.png::CompressedTexture2D::8962871544184717077::1684811777::1684811781::1::::<><>::
+Placeholder Caveman.png::CompressedTexture2D::3672725530303813714::1684693130::1684693287::1::::<><>::
+Placeholder Cursor and gun.png::CompressedTexture2D::4689493965033439849::1684779804::1684779806::1::::<><>::
+Placeholder Cursor.png::CompressedTexture2D::6515354988441610734::1684811234::1684811235::1::::<><>::
+Placeholder Floor.png::CompressedTexture2D::9198426288661479953::1684777167::1684777168::1::::<><>::
+Placeholder Grass.png::CompressedTexture2D::9024527326071843618::1706817234::1706817251::1::::<><>::
+Placeholder Gun.png::CompressedTexture2D::2584245394187487099::1684811292::1684811294::1::::<><>::
+Placeholder Health.png::CompressedTexture2D::8463393837986960875::1684693130::1684693287::1::::<><>::
+Placeholder Log.png::CompressedTexture2D::6183439760474130542::1684696273::1684696279::1::::<><>::
+Placeholder Mine.png::CompressedTexture2D::6859984349944361407::1684693130::1684693287::1::::<><>::
+Placeholder Mountain Tile.png::CompressedTexture2D::1562612035221590682::1706817381::1706817446::1::::<><>::
+Placeholder Pickaxe.png::CompressedTexture2D::2117130345071362909::1684693130::1684693287::1::::<><>::
+Placeholder Rock.png::CompressedTexture2D::5180246524732523421::1684693130::1684693287::1::::<><>::
+Placeholder Sand Tile.png::CompressedTexture2D::2212307310137265121::1706817358::1706817446::1::::<><>::
+Placeholder textures.png::CompressedTexture2D::8507871030412050063::1684693130::1684693287::1::::<><>::
+Placeholder Tree.png::CompressedTexture2D::115308828759429910::1684693130::1684693287::1::::<><>::
+Placeholder Water Tile.png::CompressedTexture2D::777282837075314725::1706817444::1706817446::1::::<><>::
+::res://Player/::1700856426
+bullet.gd::GDScript::-1::1684812979::0::1::::<>RigidBody2D<>::
+bullet.tscn::PackedScene::9117244672172342844::1700856426::0::1::::<><>::res://Player/bullet.gd<>uid://d0xxgjw8ogif2
+Player.tscn::PackedScene::5836317238391067792::1700856426::0::1::::<><>::uid://bsldiulw62ngk<>res://Player/PlayerMovement.gd<>res://Player/PlayerAttack.gd<>uid://b7pcbvpo2s5bq<>uid://cy3c7eevi03ig<>uid://byho5hq8wsda4<>uid://bc23e5s5lwnx0<>uid://cf2l5yl8e0p8x<>uid://cudkl47rp4ala<>res://Player/PlayerInventory.gd<>uid://5fs3es0s38ur<>uid://c4gnxv1by20b1<>res://Player/PlayerTool.gd<>uid://dsty4ifhnbqqt<>res://Player/PlayerStats.gd
+PlayerAttack.gd::GDScript::-1::1684816090::0::1::::<>Node2D<>::
+PlayerInventory.gd::GDScript::-1::1684776825::0::1::::<>Node2D<>::
+PlayerMovement.gd::GDScript::-1::1684693255::0::1::::<>CharacterBody2D<>::
+PlayerStats.gd::GDScript::-1::1684729243::0::1::::<>VBoxContainer<>::
+PlayerTool.gd::GDScript::-1::1684811522::0::1::::<>Node2D<>::

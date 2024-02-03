@@ -1,5 +1,10 @@
+TileMap
+Timer
+NavigationAgent2D
+Node
 CollisionShape2D
 Sprite2D
-RigidBody2D
 Area2D
+CharacterBody2D
+RigidBody2D
 TextureRect

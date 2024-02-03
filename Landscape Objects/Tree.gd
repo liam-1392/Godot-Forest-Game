@@ -12,12 +12,9 @@ func PlayerExit():
 	playerEntered = false
 
 func CheckDestroy(item):
-	print(playerEntered,item)
 	if playerEntered and item == "Axe":
 		Destroy()
-		print(playerEntered)
 
 func Destroy():
 	get_tree().call_group("GameState", "AddResource", "Wood", 1)
 	queue_free()
-

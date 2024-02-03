@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3]
 
-[ext_resource path="res://Placeholder Textures/Placeholder Gras.png" type="Texture2D" id=1]
+[ext_resource type="Texture2D" uid="uid://d1tsv8ooavwgw" path="res://Placeholder Textures/Placeholder Grass.png" id="1"]
 
 [node name="GrasTiles" type="Node2D"]
 
