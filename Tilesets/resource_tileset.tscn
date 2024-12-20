@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://k8xghfwibhrj"]
+
+[ext_resource type="PackedScene" uid="uid://cn6et1rys2ngy" path="res://Landscape Objects/Berry Bush.tscn" id="1_gma3u"]
+[ext_resource type="PackedScene" uid="uid://cvkxwhu5fpbpo" path="res://Landscape Objects/Mine.tscn" id="2_pecc0"]
+[ext_resource type="PackedScene" uid="uid://bu3gextl511lc" path="res://Landscape Objects/Tree.tscn" id="3_e1bgq"]
+
+[node name="Resource Tileset" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_gma3u")]
+
+[node name="Mine" parent="." instance=ExtResource("2_pecc0")]
+position = Vector2(20, 0)
+
+[node name="Tree" parent="." instance=ExtResource("3_e1bgq")]
+position = Vector2(0, 20)

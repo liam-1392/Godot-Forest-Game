@@ -1,0 +1,14 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://dmqnkncac5jco"]
+
+[ext_resource type="PackedScene" uid="uid://cn6et1rys2ngy" path="res://Landscape Objects/Berry Bush.tscn" id="1_tcf6d"]
+[ext_resource type="PackedScene" uid="uid://bu3gextl511lc" path="res://Landscape Objects/Tree.tscn" id="2_iy0v5"]
+[ext_resource type="PackedScene" uid="uid://cvkxwhu5fpbpo" path="res://Landscape Objects/Mine.tscn" id="3_njhtc"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_xh8at"]
+resource_name = "Resources"
+scenes/1/scene = ExtResource("1_tcf6d")
+scenes/3/scene = ExtResource("2_iy0v5")
+scenes/4/scene = ExtResource("3_njhtc")
+
+[resource]
+sources/3 = SubResource("TileSetScenesCollectionSource_xh8at")

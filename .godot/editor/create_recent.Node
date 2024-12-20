@@ -1,4 +1,5 @@
 TileMap
+Camera2D
 Timer
 NavigationAgent2D
 Node

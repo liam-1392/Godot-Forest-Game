@@ -22,22 +22,20 @@ func addObjects():
 		var object = objects.get_cellv(usedCells[i])
 		print(object)
 		if object == 0 :
-			var bush_instance = tree.instance()
+			var bush_instance = tree.instantiate()
 			add_child(bush_instance)
-			bush_instance.position = objects.map_to_world(usedCells[i])
+			bush_instance.position = objects.map_to_local(usedCells[i])
 			
 			
 		elif object == 1 :
-			var mine_instance = mine.instance()
+			var mine_instance = mine.instantiate()
 			add_child(mine_instance)
-			mine_instance.add_to_group("Coins")
-			mine_instance.position = objects.map_to_world(usedCells[i])
+			mine_instance.position = objects.map_to_local(usedCells[i])
 			
 			
 		elif object == 3 :
-			var smile_instance = tree.instance()
-			add_child(smile_instance)
-			tree_instance.add_to_group("Balloons")
-			tree_instance.position = objects.map_to_world(usedCells[i])
+			var tree_instance = tree.instantiate()
+			add_child(tree_instance)
+			tree_instance.position = objects.map_to_local(usedCells[i])
 			
 	objects.clear()

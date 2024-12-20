@@ -1,8 +1,8 @@
 extends Node2D
 
 var playerEntered = false
-export var drop = ""
-export var quantity = 0
+@export var drop = ""
+@export var quantity = 0
 
 func _ready():
 	add_to_group("GameState")

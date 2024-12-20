@@ -1,3 +1,13 @@
 res://default_env.tres
-res://Landscape Objects/LevelBuilder.gd
+res://Landscape Objects/Tree.tscn
+res://GroundTiles.tres
+res://Player/Player.tscn
+res://Landscape Objects/Berry Bush.tscn
+res://Player/bullet.tscn
+res://Landscape Objects/Mine.tscn
+res://Landscape Objects/bear.tscn
 res://Stage.tscn
+res://Tilesets/resource_tileset.tscn
+res://Scenes/Forest.tscn
+res://Scenes/Landscape/Log.tscn
+res://Player/CraftMenu.tscn
