@@ -144,7 +144,7 @@ offset_bottom = 34.0
 text = "1"
 
 [node name="Tool" type="Node2D" parent="."]
-position = Vector2(-70, 25)
+position = Vector2(75, 25)
 script = ExtResource("10_3xkn2")
 
 [node name="TextureRect" type="TextureRect" parent="Tool"]

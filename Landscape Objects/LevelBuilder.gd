@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var objects = $Objects
 
-@onready var tree = load("res://Landscape Objects/Tree.tscn")
+@onready var troee = load("res://Landscape Objects/Tree.tscn")
 @onready var mine = load("res://Landscape Objects/Mine.tscn")
 @onready var bush = load("res://Landscape Objects/Berry Bush.tscn")
 

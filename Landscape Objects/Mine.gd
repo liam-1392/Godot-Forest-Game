@@ -19,4 +19,3 @@ func Destroy():
 
 func _on_Timer_timeout():
 	playerEntered = false
-
