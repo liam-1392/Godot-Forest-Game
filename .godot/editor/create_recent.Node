@@ -1,11 +1,13 @@
+Node2D
+Label
+Sprite2D
+Node
+TextureRect
 TileMap
 Camera2D
 Timer
 NavigationAgent2D
-Node
 CollisionShape2D
-Sprite2D
 Area2D
 CharacterBody2D
 RigidBody2D
-TextureRect

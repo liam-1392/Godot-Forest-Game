@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cpffj62nxdosm"]
+[gd_scene load_steps=23 format=3 uid="uid://cpffj62nxdosm"]
 
 [ext_resource type="Texture2D" uid="uid://bsldiulw62ngk" path="res://Placeholder Textures/Placeholder Caveman.png" id="1"]
 [ext_resource type="Script" path="res://Player/PlayerMovement.gd" id="2"]
@@ -14,7 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://c4gnxv1by20b1" path="res://Placeholder Textures/Placeholder Berry.png" id="10"]
 [ext_resource type="Script" path="res://Player/PlayerTool.gd" id="10_3xkn2"]
 [ext_resource type="Texture2D" uid="uid://dsty4ifhnbqqt" path="res://Placeholder Textures/Placeholder Health.png" id="11"]
+[ext_resource type="Script" path="res://Player/inventory.gd" id="11_x356b"]
 [ext_resource type="Script" path="res://Player/PlayerStats.gd" id="12"]
+[ext_resource type="Texture2D" uid="uid://bg5wluejcp8ov" path="res://Placeholder Textures/InventorySlot2.png" id="12_yhfva"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(4.15973, 8.99355)
@@ -122,26 +124,133 @@ vframes = 2
 position = Vector2(11.1557, -2.83547)
 shape = SubResource("RectangleShape2D_3bwnn")
 
-[node name="Inventory" type="Node2D" parent="."]
+[node name="InventoryOld" type="Node2D" parent="."]
+visible = false
 position = Vector2(-100, 25)
 script = ExtResource("8")
 
-[node name="TextureRect" type="TextureRect" parent="Inventory"]
+[node name="TextureRect" type="TextureRect" parent="InventoryOld"]
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("5")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Inventory"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="InventoryOld"]
 position = Vector2(17, 20)
 sprite_frames = SubResource("2")
 animation = &"Berry"
 
-[node name="Label" type="Label" parent="Inventory"]
+[node name="Label" type="Label" parent="InventoryOld"]
 offset_left = 20.0
 offset_top = 20.0
 offset_right = 60.0
 offset_bottom = 34.0
 text = "1"
+
+[node name="Inventory" type="Node2D" parent="."]
+script = ExtResource("11_x356b")
+
+[node name="HeldItems" type="Node2D" parent="Inventory"]
+
+[node name="Slot1" type="Node2D" parent="Inventory/HeldItems"]
+position = Vector2(-115, 50)
+scale = Vector2(0.3, 0.3)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/HeldItems/Slot1"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("12_yhfva")
+
+[node name="Slot2" type="Node2D" parent="Inventory/HeldItems"]
+position = Vector2(-115, 35)
+scale = Vector2(0.3, 0.3)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/HeldItems/Slot2"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("12_yhfva")
+
+[node name="Slot3" type="Node2D" parent="Inventory/HeldItems"]
+position = Vector2(-115, 20)
+scale = Vector2(0.3, 0.3)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/HeldItems/Slot3"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("12_yhfva")
+
+[node name="Backpack" type="Node2D" parent="Inventory"]
+visible = false
+
+[node name="Slot4" type="Node2D" parent="Inventory/Backpack"]
+position = Vector2(-100, 20)
+scale = Vector2(0.3, 0.3)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/Backpack/Slot4"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("12_yhfva")
+
+[node name="Slot5" type="Node2D" parent="Inventory/Backpack"]
+position = Vector2(-100, 35)
+scale = Vector2(0.3, 0.3)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/Backpack/Slot5"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("12_yhfva")
+
+[node name="Slot6" type="Node2D" parent="Inventory/Backpack"]
+position = Vector2(-100, 50)
+scale = Vector2(0.3, 0.3)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/Backpack/Slot6"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("12_yhfva")
+
+[node name="Items" type="Node2D" parent="Inventory"]
+
+[node name="Slot1" type="Sprite2D" parent="Inventory/Items"]
+position = Vector2(-115, 50)
+
+[node name="Label" type="Label" parent="Inventory/Items/Slot1"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Slot2" type="Sprite2D" parent="Inventory/Items"]
+position = Vector2(-115, 35)
+
+[node name="Label" type="Label" parent="Inventory/Items/Slot2"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Slot3" type="Sprite2D" parent="Inventory/Items"]
+position = Vector2(-115, 20)
+
+[node name="Label" type="Label" parent="Inventory/Items/Slot3"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Slot4" type="Sprite2D" parent="Inventory/Items"]
+position = Vector2(-100, 20)
+
+[node name="Label" type="Label" parent="Inventory/Items/Slot4"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Slot5" type="Sprite2D" parent="Inventory/Items"]
+position = Vector2(-100, 35)
+
+[node name="Label" type="Label" parent="Inventory/Items/Slot5"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Slot6" type="Sprite2D" parent="Inventory/Items"]
+position = Vector2(-100, 50)
+
+[node name="Label" type="Label" parent="Inventory/Items/Slot6"]
+offset_right = 40.0
+offset_bottom = 23.0
 
 [node name="Tool" type="Node2D" parent="."]
 position = Vector2(75, 25)

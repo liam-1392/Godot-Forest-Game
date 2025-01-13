@@ -11,7 +11,7 @@ func _ready():
 
 func _process(delta):
 	CheckItemUse()
-	SetItemHeld()
+	#SetItemHeld()
 
 func SetItemHeld():
 	itemHeld = $"../Inventory".resourceOrder[$"../Inventory".selectedResource]
